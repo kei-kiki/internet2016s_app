@@ -1,0 +1,28 @@
+/* This is a CSS file */
+body {
+    width: 320px;
+    margin: 20px auto;
+}
+table#score {
+    width: 99%;
+}
+table#board {
+    width: 311px;
+    margin: auto;
+	background-color:#555555;
+}
+td.cell {
+	background-color: #FFB27F;
+	width: 38px;
+    height: 38px;
+	font-size: 36px;
+    line-height: 36px;
+	text-align: center;
+    overflow-x: inherit;
+}
+td.black {
+	color: black;
+}
+td.white {
+	color: white;
+}

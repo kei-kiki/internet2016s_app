@@ -1,0 +1,31 @@
+html,body {
+    height:100%;
+    width:100%;
+}
+
+
+table {
+    width:90%;
+    height:80%;
+    max-width: 500px;
+    max-height: 750px;
+    table-layout: fixed;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+button#reload {
+    font-size: 25px;
+}
+
+td.card {
+        border: 1px solid red;
+        background-size: 100% 100%;
+}
+td.back {
+        background-image: url("../img/back.png");
+        background-size: 100% 100%;
+}

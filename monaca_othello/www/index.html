@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- HTMLとJavaScriptでオセロをつくる -->
+<html>
+    <head>
+		<!-- 文字コードの指定 -->
+		<meta charset="UTF-8">
+		<!-- monaca -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+		<!-- CSSファイルの読み込み -->
+		<link rel="stylesheet" type="text/css" href="css/reversible.css">
+		<!-- JavaScriptファイルの読み込み -->
+		<script type="text/javascript" src="js/reversible.js"></script>
+	</head>
+	<!-- bodyを読み込む時にinit()関数を実行 -->
+	<body onload="init()">
+	<!--********** ここから画面に表示される部分 **********-->		
+
+		<!-- tableタグを使って得点板を作ろう -->
+		<table id="score">
+			<thead>
+				<!-- リロードボタン -->
+				<input type="button" value="リセット" onclick="askreload();">　　
+				<strong>スマホ用オセロ</strong>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- 黒の枚数を表示 -->
+					<td>黒(先攻)：<span id="numBlack"></span>枚</td>
+					<!-- 白の枚数を表示 -->
+					<td>白(後攻)：<span id="numWhite"></span>枚</td>
+                </tr><tr>
+					<!-- メッセージを表示 -->
+					<td>
+						Massage：
+						<!-- 「黒スキップ」とかのお知らせスペース -->
+						<span id="message"></span>
+						<!-- 勝ち負けお知らせスペース -->
+						<span id="finmessage"></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br><!-- 改行 -->
+
+		<!-- 碁盤を表示する部分 -->
+		<table id="board"></table>
+	<!--********** ここまで画面に表示される部分 **********-->		
+	</body>
+</html>
